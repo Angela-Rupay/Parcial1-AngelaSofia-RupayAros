@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin - Login</title>
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JS -->
+<script src="J_Admin.js"></script>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="C_Noticias.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR (igual que en index) -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+<div class="container">
+
+<a class="navbar-brand">Nombre de la empresa</a>
+
+<ul class="navbar-nav me-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="Noticias.html">Noticias</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="Admin.html">Admin</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="Sign.html">Sign Up</a>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle active" href="About.html" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+About
+</a>
+
+<ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+<li><a class="dropdown-item" href="#vision">Visión</a></li>
+<li><a class="dropdown-item" href="#mision">Misión</a></li>
+<li><a class="dropdown-item" href="#equipo">Equipo de Trabajo</a></li>
+</ul>
+
+</li>
+
+</ul>
+
+</div>
+
+<form class="d-flex" onsubmit="buscar(event)">
+<input class="form-control me-2" id="searchInput" placeholder="Search">
+<button class="btn btn-outline-light">Search</button>
+</form>
+
+</div>
+
+</nav>
+
+
+<!-- FORMULARIO LOGIN -->
+
+<div class="container mt-5">
+
+<div class="row justify-content-center">
+
+<div class="col-md-4">
+
+<div class="card p-4">
+
+<h3 class="text-center mb-4">Iniciar Sesión</h3>
+
+<form onsubmit="login(event)">
+
+<div class="mb-3">
+
+<label class="form-label">Usuario</label>
+
+<input type="text" id="usuario" class="form-control" required>
+
+</div>
+
+<div class="mb-3">
+
+<label class="form-label">Contraseña</label>
+
+<input type="password" id="password" class="form-control" required>
+
+</div>
+
+<div class="d-grid gap-2">
+
+<button type="submit" class="btn btn-primary">
+Log In
+</button>
+
+<a href="Sign.html" class="btn btn-success">
+Sign Up
+</a>
+
+<a href="Noticias.html" class="btn btn-danger">
+Cancelar
+</a>
+
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+</body>
+</html>
